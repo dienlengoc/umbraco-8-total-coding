@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Automated-Umbraco/.vs/Automated-Umbraco/v16
+/Automated-Umbraco/bin
+/Automated-Umbraco/obj/Debug
+/Automated-Umbraco/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
