@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web;
+@{
+    var site = Model.Root();
+    var childNodes = site.Children.Where(x => x.IsVisible());
+
+    var menuItems = new List<IPublishedContent>();
+    menuItems.Add(site);
+    menuItems.AddRange(childNodes);
+
+}
+
+@foreach (var item in menuItems)
+{
+    <a class="nav-link @(item.IsAncestorOrSelf(Model) ? "nav-link--active" : null)" href="@item.Url()">@item.Name</a>
+}

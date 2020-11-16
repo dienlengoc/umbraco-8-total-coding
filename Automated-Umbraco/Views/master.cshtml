@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = null;
+}
+
+<!doctype html>
+
+<html>
+<head>
+    <title>@Model.Value("pageTitle")</title>
+</head>
+
+<body>
+    @Html.Partial("~/Views/Partials/Navigation/Menu.cshtml")
+    @RenderBody()
+</body>
+</html>
