@@ -56,6 +56,8 @@ namespace Automated_Umbraco
         {
             appCaches.RuntimeCache.Clear();
 
+            //Found an issue with cache not invalided due to Umbraco not being able to find Content Types
+            //So to be on the safe side, I'm Saving the Content Types again, this may not be required but added just in case
             var seoContentType = contentTypeService.Get("seo");
             var homeContentType = contentTypeService.Get("home");
             var pageContentType = contentTypeService.Get("contentPage");
