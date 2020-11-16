@@ -32,11 +32,11 @@ namespace Automated_Umbraco
         {
             var initialiseContentCreationBuilder = new InitialiseContentCreationBuilder(contentService, contentTypeService, fileService, dataTypeService);
 
-            //initialiseContentCreationBuilder.
-            //                                CreateContentTypes().
-            //                                UpdateContentTypes().
-            //                                CreateContentNodes().
-            //                                UpdateContentNodes();
+            initialiseContentCreationBuilder.
+                                            CreateContentTypes().
+                                            UpdateContentTypes().
+                                            CreateContentNodes().
+                                            UpdateContentNodes();
         }
         // initialize: runs once when Umbraco starts
         public void Initialize()
