@@ -8,3 +8,7 @@
 /Automated-Umbraco/packages/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1
 /Automated-Umbraco/packages
 /Automated-Umbraco/App_Data
+/Automated-Umbraco.Models/bin/Debug
+/Automated-Umbraco.Models/obj/Debug
+/Automated-Umbraco.Services/bin/Debug
+/Automated-Umbraco.Services/obj/Debug
