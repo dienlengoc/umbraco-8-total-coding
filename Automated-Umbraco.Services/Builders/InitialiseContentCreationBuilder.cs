@@ -127,8 +127,8 @@ namespace Automated_Umbraco.Services.Builders
                 {
                     contentNodeUpdateService.UpdateContent(contentNode, new ContentNodePropertyData[]
                     {
-                        new ContentNodePropertyData("pageTitle", $"{contentNode.Name} Page in English"),
-                        new ContentNodePropertyData("body", $"<p>This is the {contentNode.Name} page</p>")
+                        new ContentNodePropertyData("pageTitle", $"{contentNode.Name}"),
+                        new ContentNodePropertyData("body", $"<p>This is the {contentNode.Name} page in English</p>")
                     });
                 }
             }
