@@ -78,7 +78,7 @@ namespace Automated_Umbraco.Services
 
             if (!string.IsNullOrWhiteSpace(contentTypeData.Template))
             {
-                var template = _fileService.CreateTemplateWithIdentity(contentTypeData.Template, contentTypeData.Template, null, masterTemplate);
+                var template = _fileService.CreateTemplateWithIdentity(contentTypeData.Template, contentType.Alias, null, masterTemplate);
                 _fileService.SaveTemplate(template);
 
                 contentType.SetDefaultTemplate(template);
